@@ -1,0 +1,12 @@
+kind: PersistentVolume
+apiVersion: v1
+metadata:
+  name: mysql-persistent-storage
+spec:
+  hostPath:
+    path: /var/lib/mysql
+  capacity:
+    storage: 1Gi
+  accessModes:
+    - ReadWriteOnce ## only one node can read/write the data to volume
+  persistentVolumeReclaimPolicy: Retain # other options Recycle / Delete

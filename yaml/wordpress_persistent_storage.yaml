@@ -1,0 +1,12 @@
+kind: PersistentVolume
+apiVersion: v1
+metadata:
+  name: wordpress-persistent-storage
+spec:
+  hostPath:
+    path: /var/www/html
+  capacity:
+    storage: 1Gi
+  accessModes:
+    - ReadWriteOnce ## only one node can read/write the data to volume
+  persistentVolumeReclaimPolicy: Retain # other options Recycle / Delete

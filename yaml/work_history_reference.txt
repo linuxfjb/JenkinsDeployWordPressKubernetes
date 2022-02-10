@@ -1,0 +1,513 @@
+    2  vi setup_kube.sh
+    3  sh setup_kube.sh 
+    4  kubeadm token list
+    5  kubeadm token generate
+    6  kubeadm join --help
+    7  kubeadm token generate --help
+    8  kubeadm token create --print-join-command
+    9  kubectl get nodes
+   10  cat /var/lib/jenkins/secrets/initialAdminPassword
+
+   13  kubectl get pods -o wide
+   15  more setup_kube.sh 
+   16  systemctl start kubectl.service
+   17  systemctl start kubelet.service
+   18  kubectl get pods -o wide
+   19  kubectl get pods -o wide --all
+   20  kubectl get pods -o wide -ns default
+   21  kubectl get pods -o wide -n default
+   22  kubectl get pods -o wide -n all
+   23  kubectl get ds
+   24  kubectl get nodes
+   25  docker images
+   26  ls
+   27  cat setup_kube.sh 
+   28  kubectl get svc
+   29  kubectl get ns
+   30  kubectl get pods -o wide -n kube-system
+   31  docker ps
+   32  docker images
+   33  top
+   34  systemctl -help
+   35  systemctl list-units
+   36  kubectl get pods -o wide -n kube-system
+   38  ps -auws | grep jenkins
+   39  ps -auwx | grep jenkins
+   40  systemctl restart jenkins
+   41  systemctl restart jenkins.service
+   42  history
+   43  systemctl restart jenkins.service
+
+   44  docker ps
+   45  sudo chmod 766 /var/run/docker.sock
+   46  java
+   47  java --version
+
+   48  ls .kube/config 
+   49  vi .kube/config 
+   50  pwd
+   51  ip a
+   52  ip a | ens
+   53  hostname -i
+   54  kubectl config current-context
+   55  vi .kube/config 
+   56  kubectl get config
+   57  kubeconfig
+   58  kubectl get cf
+   59  kubectl get configmap
+   60  kubectl get ns
+   61  vi .kube/config 
+   62  echo "LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSUMvakNDQWVhZ0F3SUJBZ0lCQURBTkJna3Foa2lHOXcwQkFRc0ZBREFWTVJNd0VRWURWUVFERXdwcmRXSmwKY201bGRHVnpNQjRYRFRJeU1ERXlOakExTXpjeU1Gb1hEVE15TURFeU5EQTFNemN5TUZvd0ZURVRNQkVHQTFVRQpBeE1LYTNWaVpYSnVaWFJsY3pDQ0FTSXdEUVlKS29aSWh2Y05BUUVCQlFBRGdnRVBBRENDQVFvQ2dnRUJBTW1TCjRTeERzRU9GTnNpMkhlSFlWWlBWNURJajF4TGZEZ1l1THNPcXFXK1liamNUV3FES1lOZi8rL1h1ZFRyejRiWWwKSUdydWpIeExPRzNBalVoZzY5endtNnlwQm5KZFQyTlVBenVNY2ptbzV5SE9VTjJVc3p5Uy9EVEpqUjJwby9ZSgpadDNRYzM1d2J3UUVram9qQUgveDB5TzAwZCtteU5BYWRJTjFnYXZCd0YwUHpBdkJ1VVFmREEzUGRHaW43M3dXCnozSGxGeEh3VCtpMUp4YU9rdm9CeThEcko5OWxsMGx4a0JGN3V5cURDSGJNMnFvekp2OWhIbHlIMzQ3REprTG4KQmUrdVVNbUJuYm1GaXBJaHlIVjlVV09FdHp6TXBEbW9VMTZRZjQrOEFXV2hQekdFbHVQc1p1U0hwR2pZYW9aQwpXOXllSlF6K2JSaW1zb2JFVFkwQ0F3RUFBYU5aTUZjd0RnWURWUjBQQVFIL0JBUURBZ0trTUE4R0ExVWRFd0VCCi93UUZNQU1CQWY4d0hRWURWUjBPQkJZRUZFaU1uOEh0NE5Kdk1IWkYyQWhFNUpnZVQzb0VNQlVHQTFVZEVRUU8KTUF5Q0NtdDFZbVZ5Ym1WMFpYTXdEUVlKS29aSWh2Y05BUUVMQlFBRGdnRUJBSXUyUXIwQTVZdjRlWHBEeXN1RApFRC9MMHhlRFVRSXdPSWFoY3NuaUYraVVsWWtVV3p0WFFndlVwdUZjcmNIQnEzSXFwZmxCVjdEVE90OUhWSmR4CnhSb1hhb28rYkhjaHJjV1FvVjFBQWxSaXcrNVloQTBiUXVxQVpsVEUwd1NKQVMzci9PTU5yL1hITktvTURsdEEKL25FUFJhQW83Qk9CaFVWV2laeTZtZW5nc09KSEtpVzd3QWpmZ0FoUXc3c0l1aVF6Z1EzV2lmT3kwQ0QrcHNLMQpvanpmdDZ0UTVYVkJkcmErMkYrODUrMkhDclQxYXFTYzBYem5Td3hFbzFuazA0RXlRYkxyMnczczNuUE9hMHQ2CjVQODFNNVJ0VnkzQy9uTkowS2MyYTBXdUJZM3dJUzRuRGhSdmh4N1hmVkVlVmxydXUzVUZoTFNqczNtQVF6bnAKdWpRPQotLS0tLUVORCBDRVJUSUZJQ0FURS0tLS0tCg==" | base64
+   63  kubectl get pods
+   64  kubectl get ns
+   65  kubectl get ns kube-public
+   66  vi .kube/config 
+   67  exit
+   68  kubectl get nodes
+
+   69  ip a
+   70  ping localhost:6443
+   71  ping 127.0.0.1:6443
+   72  ping
+   73  netstat -n
+   74  man netstat
+   75  netstat -nl
+   76  netstat -nl | grep 6443
+   77  netstat -nal
+   80  ifconfig
+   81  ping 10.142.0.2
+
+   83  vi .kube/config 
+   84  kubectl get user
+   85  kubectl get users
+   86  kubectl get config view
+   87  kubectl get config
+   88  kubectl config view
+   89  ls
+   90  vi .kube/config 
+   91  echo "LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSURJVENDQWdtZ0F3SUJBZ0lJVEJSK0h0SEcyNTB3RFFZSktvWklodmNOQVFFTEJRQXdGVEVUTUJFR0ExVUUKQXhNS2EzVmlaWEp1WlhSbGN6QWVGdzB5TWpBeE1qWXdOVE0zTWpCYUZ3MHlNekF4TWpZd05UTTNNakphTURReApGekFWQmdOVkJBb1REbk41YzNSbGJUcHRZWE4wWlhKek1Sa3dGd1lEVlFRREV4QnJkV0psY201bGRHVnpMV0ZrCmJXbHVNSUlCSWpBTkJna3Foa2lHOXcwQkFRRUZBQU9DQVE4QU1JSUJDZ0tDQVFFQTBTS0ErdmN0RXVrRHhuVUYKRnNzWStKTlBBREpETkJMNHcyL1c1VXRQZFYzUmVMS1dBR1lJQnhsaVV5Q3Job29ldmFnT0xxaUwvRnI5aUlNYgpJcC9MQmJ5RVlPWDF3VWs4VlhrUVJFb2hIeGxjbkJ1cis4TFdEUjNqbllWK29tMzRJZHpmWUkycEV3L2hGTFloCmh6Nk9hTnFmWHdMQWRNNjJxcUs3ZStpa1VhK1orUTFhTTZSY3JwV0NOOHk2Y0NqS1RMTUdQcHEvNGJxTjhidUYKRXZ4M0p3dFBRWmp2dEEwNElUaTI1Q2cvZkdFOCtBbUd6a0tPaUM0RHhLK2piWUxISmVZbHY2U1EzWTZLaExReApPMkR6RjNiS0JuVktySGhLbHhWM212b09kNlpidE9rSFpiU2tIMXhFdzdCUmRyajRIMGdQNWs0UisyL1BiVW1mCmQ3L200d0lEQVFBQm8xWXdWREFPQmdOVkhROEJBZjhFQkFNQ0JhQXdFd1lEVlIwbEJBd3dDZ1lJS3dZQkJRVUgKQXdJd0RBWURWUjBUQVFIL0JBSXdBREFmQmdOVkhTTUVHREFXZ0JSSWpKL0I3ZURTYnpCMlJkZ0lST1NZSGs5NgpCREFOQmdrcWhraUc5dzBCQVFzRkFBT0NBUUVBZ2RkWmtkVDhaK3lObUJ1T3pYZkswUWQ0UTNDRjNIbVlXRUdmCjlpZENUalFsNFNEMU01Q0dTTVRCWXdkbjZaSS9uNVNrcDBQZExDNUoxeFFwVWo3ellpcitYbk5MeG43QXozNU8KT3FJMDMycnhCTXUzUW9mNkRTUzNuNS9QMDc1T01HeHUxUzRvRzR4YytFdG8rb2xLdno0WjlrUW9CRzlMN09EdQpNZU1wOGtCNXY1WVZyVTQ5MHk2U0ZFenI3aWxaZWpJdTYwMVpUY3M3VmZkVXlBdVBYb3NVR0hHUTZscFIrQWN5Cmt0Z21VSVdldUo5bTJDQjhOcDdyUDljZXo4U1VkS1RYbjM2R3ZJZ3lsWWxZQXl6cEJkSm1jcXQzWHdMSkdTL20KTVJLQlpBOWhmYWhHbHRlcnBmVEJDblpWNGNPWk52N2M2VXF1bW1Zajh4WkNHNFV1TkE9PQotLS0tLUVORCBDRVJUSUZJQ0FURS0tLS0tCg==" | base64
+
+   92  vi /etc/kubernetes/pki/ca.crt
+   93  vi /etc/kubernetes/pki/ca.key
+   94  curl localhost:8443
+   95  netstat -nal | grep 8443
+   96  netstat -nal | grep 6443
+
+   97  cp ~linuxfjb/connect_to_kube.sh .
+   98  ls
+   99  more connect_to_kube.sh 
+  100  kubectl create namespace devops-tools
+  102  vi setup_kube.sh 
+  103  vi connect_to_kube.sh 
+  104  vi service-account.yaml
+
+  105  cat connect_to_kube.sh 
+  106  kubectl apply -f service-account.yaml 
+  107  kubectl get sa
+  108  kubectl get roles
+  109  kubectl get rolebinding
+  110  kubectl describe jenkins-role-binding
+  111  kubectl get rolebinding jenkins-role-binding
+  112  kubectl describe rolebinding jenkins-role-binding
+  113  kubectl describe role Role
+  114  kubectl describe role jenkins
+
+  115  vi .kube/config 
+  116  vi /etc/kubernetes/kubelet.conf 
+  117  vi /etc/kubernetes/admin.conf 
+
+  118  grep "secure-port" *
+  119  grep "secure-port" /etc/kubernetes/*
+  120  grep "secure-port" /etc/kubernetes/*/*
+
+  121  vi /etc/kubernetes/manifests/kube-apiserver.yaml 
+  122  SECRET_NAME=$(kubectl get serviceaccount jenkins-admin  -o=jsonpath='{.secrets[0].name}' -n devops-tools)
+  123  kubectl get sa jenkins-admin
+  124  kubecctl get serviceaccount jenkins-admin
+  125  kubectl get serviceaccount jenkins-admin
+  126  kubectl get serviceaccount jenkins-admin -n devops-tools
+  128  vi service-account.yaml 
+
+  129  more connect_to_kube.sh 
+  130  vi service-account.yaml 
+  131  kubectl apply -f service-account.yaml 
+  132  kubectl get serviceaccount jenkins-admin -n devops-tools
+  134  SECRET_NAME=$(kubectl get serviceaccount jenkins-admin  -o=jsonpath='{.secrets[0].name}' -n devops-tools)
+  135  env
+  136  echo SECRET_NAME
+  137  kubectl get serviceaccount jenkins-admin  -o=jsonpath='{.secrets[0].name}' -n devops-tools
+  138  kubectl get serviceaccount jenkins-admin -n devops-tools
+
+  144  cat connect_to_kube
+  145  cat connect_to_kube_part2.sh 
+  146  kubectl get secrets $SECRET_NAME  -o=jsonpath='{.data.token}' -n devops-tools | base64 -D
+  147  man base64
+  148  kubectl get secrets $SECRET_NAME  -o=jsonpath='{.data.token}' -n devops-tools | base64 -d
+  149  kubectl get secrets $SECRET_NAME  -o=jsonpath='{.data.token}' -n devops-tools | base64
+
+  150  vi connect_to_kube_part2.sh 
+  151  cat connect_to_kube_part2.sh 
+  152  kubectl get secrets $SECRET_NAME  -o=jsonpath='{.data.token}' -n devops-tools | base64 -d > service_account_secret.txt
+  153  vi service_account_secret.txt 
+  154  cat service_account_secret.txt 
+  155  vi service_account_secret.txt 
+  156  curl https://34.75.167.39:6443
+  157  curl https://34.75.167.39:8443
+
+  160  cd /
+  161  ls -latr
+  162  ls *jenk*
+  163  cd /etc
+  165  ls *jen*
+  166  cd default/
+  167  ls
+  168  more jenkins 
+  169  vi jenkins 
+  170  cd /var/lib
+  171  ls
+  172  cd jenkins/
+  173  ls
+  174  grep -i url *
+  175  ping 34.73.107.3
+  176  ping 34.73.107.3:8080
+  177  curl 34.73.107.3:8080
+  178  curl http://34.138.207.253:8080
+
+#searching for correct jenkin url port 8080  the key was getting response from tcpSlaveAngentListener
+# and setting up jnlp port to not be 8080 in the jenkins global config area
+  179  vi config.xml 
+  180  kubectl get nodes
+  181  curl https://34.75.167.39:6443
+  182  kubernets get clusterrole -n devops
+  183  kubectl get clusterrole -n devops
+  184  kubectl get clusterrole -n devops-tools
+  185  kubectl get role -n devops-tools
+  186  kubectl get clusterrolebinding -n devops-tools
+  187  kubectl get sa -n devops-tools
+  188  kubect get pods -o wide
+  189  kubectl get pods -o wide
+  190  kubectl get pods -o wide -n devops-tools
+  191  ls
+  192  vi config.xml 
+  193  grep url *.ml
+  194  grep url *.xml
+  195  grep -i url *.xml
+  196  curl https://34.75.167.39:6443
+  197  curl http://34.138.207.253:8080
+  198  ip a
+  199  ping 10.142.0.2
+  200  curl 10.142.0.2:8080
+  201  history
+  202  cd /var/lib/jenkins/
+  203  ls
+  204  curl http://10.142.0.2:8080
+  205  curl http://10.142.0.2:8080/tcpSlaveAgentListener/
+  206  curl http://localhost:8080/tcpSlaveAgentListener/
+  207  curl http://34.75.167.39:8080/
+  208  history
+  209  curl http://34.75.167.39:8080/tcpSlaveAgentListener/
+  210  grep tcpSlaveAgentListener *
+  211  curl http://34.75.167.39:8081/tcpSlaveAgentListener/
+  212  curl http://34.75.167.39:8081
+  213  curl http://10.142.0.2:8080/tcpSlaveAgentListener
+  214  curl http://10.142.0.2:8080/tcpSlaveAgentListener/
+  215  curl http://10.142.0.2:8081/tcpSlaveAgentListener/
+  216  curl http://10.142.0.2:8081
+
+#some type of example to help me understand if jnlp was running
+  218  mkdir temp_petclinic
+  219  cd temp_petclinic/
+  220  ls
+  221  git init /home/jenkins/agent/workspace/running_images_hopefully
+  222  cd /home/jenkins/agent/workspace/
+  223  ls
+  224  cd running_images_hopefully/
+  225  ls
+  226  git --version
+  227  history
+  228  git fetch --tags --force --progress -- https://github.com/spring-projects/spring-petclinic.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+  229  ls
+  230  ls -latr
+  231  git config remote.origin.url https://github.com/spring-projects/spring-petclinic.git # timeout=10
+  232  git remote -v
+  233  git config --add remote.origin.fetch +refs/heads/*:refs/remotes/origin/*
+  234  git branch
+  235  git branch -v
+  236  git branch -h
+  237  git branch --list
+  238  ls
+  239  cd ..
+  240  ls
+  241  history
+  242  cd running_images_hopefully/
+  243  git checkout main
+
+  245  kubectl get pods -o wide
+  246  kubectl get pods -o wide -n devops-tools
+  247  kubectl get ns
+  248  kubectl get pods -o wide -n devops-tools
+  249  watch kubectl get pods -n devops-tools
+  250  kubect describe pod running-images-hopefully-11-rt092-bcd47-3jh9n
+  251  kubectl describe pod running-images-hopefully-11-rt092-bcd47-3jh9n
+  252  sleep 1000
+  253  man sleep
+  254  sleep 60
+  255  sh 'sleep 60'
+  256  watch kubectl get pods -n devops-tools
+  257  kubectl describe pod running-images-hopefully-12-pkqnt-k84z6-65n1b
+  258  watch kubectl get pods -n devops-tools
+  259  kubectl describe running-images-hopefully-12-pkqnt-k84z6-65n1b
+  260  kubectl get pods -o wide
+  261  kubectl get pods -o wide -n devops-tools
+  262  kubectl describe pod running-images-hopefully-12-pkqnt-k84z6-65n1b
+  263  kubectl exec running-images-hopefully-12-pkqnt-k84z6-65n1b -- bash
+  264  kubectl describe pod running-images-hopefully-12-pkqnt-k84z6-65n1b -n devops-tools
+  265  ls
+  266  history 
+  267  kubectl describe pod running-images-hopefully-12-pkqnt-k84z6-65n1b -n devops-tools
+  268  curl http://localhost:8080/tcpSlaveAgentListener/
+  269  curl http://10.142.0.2:8080/tcpSlaveAgentListener/
+
+  272  kubectl get secrets $SECRET_NAME  -o=jsonpath='{.data.token}' -n devops-tools | base64 -d
+  273  history
+  274  clear
+  275  SECRET_NAME=$(kubectl get serviceaccount jenkins-admin  -o=jsonpath='{.secrets[0].name}' -n devops-tools)
+  276  kubectl get secrets $SECRET_NAME  -o=jsonpath='{.data.token}' -n devops-tools | base64 -d
+
+  278  vi deploy_word_press.yaml
+  # to set up the secret..didnt use kustomization method..set up secret.yaml instead
+  282  cat <<EOF >./kustomization.yaml
+  283  secretGenerator:
+  284  - name: mysql-pass
+  285    literals:
+  286    - password=YOUR_PASSWORD
+  287  EOF
+  288  ls
+  289  vi kustomization.yaml 
+  290  mv kustomization.yaml secret.yaml
+  291  kubectl secret.yaml 
+  292  history | grep kubectl
+  293  kubectl apply -h
+  294  ls
+  295  kubectl apply -f secret.yaml 
+  296  vi secret.yaml 
+
+  298  vi mysql_persistent.yaml
+  299  kubectl apply -f mysql_persistent.yaml 
+  300  kubectl get pods -o wide
+  301  systemctl restart kubelet.service
+  302  kubectl get pods -o wide
+  303  kubectl get nodes
+
+  306  vi wordpress_deploy.yaml
+  307  kubeclt apply -f wordpress_deploy.yaml 
+  308  kubectl apply -f wordpress_deploy.yaml 
+  309  kubectl get pods -o
+  310  kubectl get pods -o wide
+  311  kubectl get nodes
+  312  kubectl describe pod wordpress-687f77b58d-5g2kk
+  313  kubectl get secrets
+  315  vi secret.yaml 
+  316  kubectl apply -f secret.yaml 
+  317  kubectl get pv
+  318  kubectl get pvc
+
+#looks like two files:
+# secret.yaml gets recreated after creating mysql_pass.yaml
+  320  mv secret.yaml mysql_pass.yaml
+  321  vi secret.yaml
+  322  vi mysql_pass.yaml 
+  323  vi secret.yaml 
+  324  cat mysql_pass.yaml 
+  325  vi secret.yaml 
+  326  kubectl apply -f secret.yaml 
+  327  kubectl get secrets
+  328  kubectl get pvc
+
+  342  free
+  343  df -h
+
+  345  kubectl get pods -o
+  346  kubectl
+  347  kubectl get pods
+  348  kubectl get volumes
+  349  kubectl get volume
+  350  kubectl get help
+  351  kubectl get pv
+  353  kubectl get pv -n devops-tools
+  354  kubectl get pvc -n devops-tools
+  355  kubectl get pvc -n devops-tool
+  356  kubectl get ns
+  357  kubectl get pvc -n devops-tools
+
+  361  vi mysql_pass.yaml 
+  362  ls -latr
+  363  vi mysql_persistent.yaml 
+  364  vi wordpress_deploy.yaml 
+  365  vi mysql_persistent.yaml 
+
+  366  vi wordpress_deploy.yaml 
+  367  kubectl apply -f mysql_persistent.yaml 
+  368  kubectl get pvc
+  369  kubectl get pvc mysql-pv-claim-
+  370  kubectl get pvc mysql-pv-claim
+  371  kubectl rm pvc mysql-pv-claim
+  372  kubectl delete pvc mysql-pv-claim
+  373  kubectl apply -f mysql_persistent.yaml 
+  374  kubectl get pvc mysql-pv-claim
+  375  kubectl get pods -o wide
+  376  kubectl describe pod wordpress-mysql-db6648954-jf9vc
+  377  kubectl get nodes
+  378  kubectl get pv
+  379  kubectl get pvc
+  381  vi mysql_persistent.yaml 
+  382  kubectl get pvc
+  383  kubectl get pv
+  384  kubectl describe pvc mysql-pv-claim
+
+  #fixing spacing problem with the volumes (they were too big)
+  385  vi mysql_persistent.yaml 
+  386  kubectl get pvc
+  387  grep mysql_persistent *
+  388  grep mysql-persistent *
+  389  vi mysql_persistent.yaml 
+  390  kubectl delete pvc mysql-pv-claim
+  391  kubectl delete pvc wp-pv-claim
+  392  kubectl apply -f mysql_persistent.yaml 
+  393  kubectl get pvc
+  394  kubectl describe pvc mysql-pv-claim
+  395  ls
+  396  vi mysql_persistent.yaml 
+  397  vi mysql_persistent_storage.yaml
+  398  vi mysql_persistent.yaml mysql_persistent_storage.yaml 
+  399  kubectl apply -f mysql_persistent_storage.yaml 
+  400  vi mysql_persistent.yaml mysql_persistent_storage.yaml 
+  401  kubectl apply -f mysql_persistent_storage.yaml 
+  402  kubectl get pv
+  403  kubectl get pvc
+  404  ls
+  405  kubectl get pods -o wide
+  406  ls
+
+#after volumes work..eventually had to delete wordpress and restart it
+#as well as teh service from loadbalancer(cloud specific like aws) to using nodeport (connect to node ip (hostname -i) in browser)
+  407  vi wordpress_deploy.yaml 
+  408  cp mysql_persistent_storage.yaml wordpress_persistent_storage.yaml
+  409  vi wordpress_deploy.yaml wordpress_persistent_storage.yaml 
+  410  kubectl apply -f wordpress_persistent_storage.yaml 
+  411  kubectl get pv
+  412  kubectl get pods -o
+  413  kubectl goet pods -o wide
+  414  kubectl get pods -o wide
+  415  kubectl describe pod wordpress-687f77b58d-5g2kk
+  416  kubectl get pvc
+  417  kubectl apply -f wordpress_deploy.yaml 
+  418  kubectl get pvc
+  419  kubectl describe pod wordpress-687f77b58d-5g2kk
+  420  kubectl get pods -o wide
+  421  ls
+  422  vi wordpress_deploy.yaml 
+  423  kubectl get pods -o wide
+  424  kubectl exec wordpress-mysql-db6648954-jf9vc -- bash
+  425  ls
+  426  kubectl exec wordpress-mysql-db6648954-jf9vc -- bash
+  427  kubectl get pods -o wide
+  428  mysql
+  429  kubectl exec -it wordpress-mysql-db6648954-jf9vc -- bash
+  430  kubectl get services
+  431  kubectl delete service wordpress
+  432  vi wordpress_deploy.yaml 
+  433  kubectl apply -f wordpress_deploy.yaml 
+  434  vi wordpress_deploy.yaml 
+  435  grep 32767 *
+  436  vi wordpress_deploy.yaml 
+  437  kubectl apply -f wordpress_deploy.yaml 
+  438  kubetctl get service
+  439  kubetctl get services
+  440  kubectl get services
+  441  hostname -i
+
+#node port wanted the external node ip not this internal one..was confused
+#the reassigned port to 32470 is what to use in browser
+  442  curl 10.142.0.2:80
+  443  curl 10.142.0.2:32470
+
+  444  netstat -nap
+  445  kubetctl get services
+  446  kubectl get services
+#yea its there listening on this port
+  447  netstat -nap | grep 32470
+  448  curl localhost:32470
+  449  curl localhost:8085
+  450  netstat -nap | grep 8085
+  451  kubectl get services
+
+  454  kubectl get pods -o wide
+  455  kubectl exec -it wordpress-6f675979f8-qhwf8 -- bash
+
+#now im getting whats going on and recreating the service as nodeport (original loadbalancer type was wrong)
+  458  kubectl get service
+  459  kubectl delete service wordpress
+  460  kubectl get pods -o wide
+  461  kubectl delete pod wordpress-6f675979f8-qhwf8
+  462  kubectl apply -f wordpress_deploy.yaml 
+  463  kubectl get pods -o wide
+  464  kubectl get services
+  465  curl 10.147.0.3
+
+  467  vi mysql_persistent.yaml 
+  468  kubectl get pods -o wide
+  469  mysql 10.44.0.1
+  470  kubectl exec -it wordpress-mysql-db6648954-jf9vc -- bash
+  471  ls
+  472  kubectl get pods -o wide
+  473  kubectl describe pod wordpress-6f675979f8-hzbxj
+  474  kubectl get pods -o wide
+  475  kubectl get nodes
+  476  kubectl get nodes -o wide
+  477  kubectl get pods -o wide
+  478  kubectl get services
+  479  kubectl exec -it wordpress-6f675979f8-hzbxj -- bash
+
+#this is to set up access to github..generate an id_rsa.pub to put in github to connect via ssh
+  481  vi setup_git.sh
+  482  ssh-keygen
+  484  cd .ssh
+  486  cat id_rsa.pub 
+  488  cd .ssh
+  492  mkdir git
+  493  cd git/
+  494  cat ../setup_git
+  495  cat ../setup_git.sh
+
+  496  git init
+  497  touch README.md
+  498  get add README.md
+  499  git add README.md 
+  500  git commit -m "new repository first commit"
+  501  git config --global
+  502  git config --global --list
+  503  cat ../setup_git.sh
+#rename main branch from 'master' to main o boy
+  508  git branch -M main
+  509  git remote add origin git@github.com:linuxfjb/JenkinsDeployWordPressKubernetes.git
+  510  git push -u origin main
+
+  513  mkdir yaml
+  515  mv *.yaml yaml/
+
+  531  history > work_history_reference.txt
+
+# test dynamic deployment piece
+# example change password
+vi secret.yaml # change the password
+#restart the mysql server - the mysql db storage isnt retained for some reason
+#wordpress will restart and create a new table and then have to reconfigure the servers all over again
+kubectl rollout restart deployment wordpress-mysql
+kubectl rollout restart deployment wordpress
+
+#now go to the new mysql pod instance and login:
+kubectl get pods -o wide
+#look up the mysql pod name
+kubectl exec -it wordpress-mysql-75bc7647f6-vqwf4 -- bash
+
