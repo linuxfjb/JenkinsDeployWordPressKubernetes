@@ -9,14 +9,10 @@ podTemplate(containers: [
 
     node(POD_LABEL) {
         stage('Get a Maven project') {
-            git url: 'https://github.com/spring-projects/spring-petclinic.git', branch: 'main'
             container('maven') {
                 stage('Build a Maven project') {
                     sh '''
-                    #echo "maven build"
-                    #cd spring-petclinic
-                    #./mvnw package
-                    #java -jar target/*.jar
+                    kubectl apply -f yaml/
                     sleep 6
                     '''
                     echo "did i keep going or am i waiting?"
