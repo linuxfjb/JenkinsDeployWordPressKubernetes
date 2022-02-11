@@ -1,0 +1,45 @@
+podTemplate(containers: [
+    containerTemplate(
+        name: 'maven', 
+        image: 'maven:3.8.1-jdk-8', 
+        command: 'sleep', 
+        args: '30d'
+        ),
+    containerTemplate(
+        name: 'python', 
+        image: 'python:latest', 
+        command: 'sleep', 
+        args: '30d')
+  ]) {
+
+    node(POD_LABEL) {
+        stage('Get a Maven project') {
+            git url: 'https://github.com/spring-projects/spring-petclinic.git', branch: 'main'
+            container('maven') {
+                stage('Build a Maven project') {
+                    sh '''
+                    #echo "maven build"
+                    #cd spring-petclinic
+                    #./mvnw package
+                    #java -jar target/*.jar
+                    sleep 60
+                    '''
+                    echo "did i keep going or am i waiting?"
+                }
+            }
+        }
+
+        stage('Get a Python Project') {
+            git url: 'https://github.com/hashicorp/terraform.git', branch: 'main'
+            container('python') {
+                stage('Build a Go project') {
+                    sh '''
+                    echo "Go Build"
+                    '''
+                    sleep 60
+                }
+            }
+        }
+
+    }
+}
