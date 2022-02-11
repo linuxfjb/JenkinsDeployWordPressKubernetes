@@ -1,23 +1,23 @@
-podTemplate(containers: [
-    containerTemplate(
-        name: 'maven', 
-        image: 'maven:3.8.1-jdk-8', 
-        command: 'sleep', 
-        args: '30d'
-        ),
-  ]) {
+pipeline {
 
-    node(POD_LABEL) {
-        stage('Get a Maven project') {
-            container('maven') {
-                stage('Build a Maven project') {
-                    sh '''
-                    kubectl apply -f yaml/
-                    sleep 6
-                    '''
-                    echo "did i keep going or am i waiting?"
-                }
-            }
-        }
+  agent any
+
+  stages {
+
+    stage('Checkout Source') {
+      steps {
+        git 'https://github.com/linuxfjb/JenkinsDeployWordPressKubernetes'
+      }
     }
+
+    stage('Deploy App') {
+      steps {
+        script {
+          kubernetesDeploy(configs: "yamls/*.yaml", kubeconfigId: "mykubeconfig")
+        }
+      }
+    }
+
+  }
+
 }
