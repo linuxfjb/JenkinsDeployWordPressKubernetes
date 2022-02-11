@@ -1,4 +1,5 @@
-stage('List pods') {
+node {
+  stage('List pods') {
     checkout scm
     //git url: 'https://github.com/linuxfjb/JenkinsDeployWordPressKubernetes', branch: 'main'
     withKubeConfig([credentialsId: 'kubernetes-admin',
@@ -12,3 +13,4 @@ stage('List pods') {
       sh 'kubectl apply -f yaml/'
     }
   }
+}
