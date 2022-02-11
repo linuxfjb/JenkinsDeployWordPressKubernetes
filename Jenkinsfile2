@@ -6,7 +6,7 @@ pipeline {
 
     stage('Checkout Source') {
       steps {
-        git 'https://github.com/linuxfjb/JenkinsDeployWordPressKubernetes'
+        git 'https://github.com/linuxfjb/JenkinsDeployWordPressKubernetes', branch: 'main'
       }
     }
 
