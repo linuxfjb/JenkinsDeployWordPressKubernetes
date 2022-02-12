@@ -1,0 +1,7 @@
+node {
+  stage('Apply Kubernetes files') {
+    withKubeConfig([credentialsId: 'user1', serverUrl: 'https://34.148.213.241:6443/']) {
+      sh 'kubectl apply -f yaml'
+    }
+  }
+}
