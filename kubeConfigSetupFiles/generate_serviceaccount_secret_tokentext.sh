@@ -3,5 +3,5 @@
 
 #NOTE: creates a service_account_secret.txt file to copy paste into jenkins.
 
-SECRET_NAME=$(kubectl get serviceaccount jenkins-admin  -o=jsonpath='{.secrets[0].name}' -n devops-tools)
-kubectl get secrets $SECRET_NAME  -o=jsonpath='{.data.token}' -n devops-tools | base64 -d > service_account_secret.txt
+SECRET_NAME=$(kubectl get serviceaccount jenkins-admin  -o=jsonpath='{.secrets[0].name}' -n default)
+kubectl get secrets $SECRET_NAME  -o=jsonpath='{.data.token}' -n default | base64 -d > service_account_secret.txt
