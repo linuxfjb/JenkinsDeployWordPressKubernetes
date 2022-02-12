@@ -1,6 +1,7 @@
 node {
   //this is kubernetes cli again
-  //
+  //just using git url instead of checkout scm
+
   stage('Checkout Source') {
     git url: 'https://github.com/linuxfjb/JenkinsDeployWordPressKubernetes', branch: 'main'
     //checkout scm
