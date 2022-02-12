@@ -7,7 +7,7 @@ node {
                     serverUrl: 'http://localhost:6443',
                     //contextName: 'kubernetes-admin@kubernetes',
                     //clusterName: 'kubernetes',
-                    //namespace: 'devops-tools'
+                    namespace: 'devops-tools'
                     ]) {
       sh 'kubectl get pods -o wide'
       sh 'kubectl apply -f yaml/'
