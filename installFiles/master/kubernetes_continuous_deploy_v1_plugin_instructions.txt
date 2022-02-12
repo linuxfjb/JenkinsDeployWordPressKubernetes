@@ -1,0 +1,13 @@
+the latest version of Jenkins plugin:
+  Kubernetes Continuous Deploy is broken.
+  the user community has found that installing v1.0 is stable
+  this is the jenkins CD v1.0 plugin file to *manually* install.
+
+instructions:
+  1. shut down jenkins server
+     systemctl stop jenkins.service
+
+  2. cp kubernetes-cd.hpi /var/lib/jenkins/plugins/
+
+  3. bring jenkins back up. it will auto install the plugin.
+     systemctl start jenkins.service
