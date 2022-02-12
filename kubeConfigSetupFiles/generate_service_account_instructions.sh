@@ -13,6 +13,7 @@ apiVersion: v1
 kind: ServiceAccount
 metadata:
   name: jenkins-admin
+  #namespace: default
   namespace: default
 ---
 apiVersion: rbac.authorization.k8s.io/v1
@@ -34,7 +35,16 @@ rules:
   verbs: ["get","list","watch"]
 - apiGroups: [""]
   resources: ["secrets"]
-  verbs: ["get"]
+  verbs: ["get", "list", "watch", "create", "update", "patch", "delete"]
+- apiGroups: ["", "apps"]
+  resources: ["deployments"]
+  verbs: ["get", "list", "watch", "create", "update", "patch", "delete"]
+- apiGroups: [""]
+  resources: ["services"]
+  verbs: ["get", "list", "watch", "create", "update", "patch", "delete"]
+- apiGroups: [""]
+  resources: ["persistentvolumeclaims"]
+  verbs: ["get", "list", "watch", "create", "update", "patch", "delete"]
 ---
 apiVersion: rbac.authorization.k8s.io/v1
 kind: RoleBinding
@@ -49,7 +59,6 @@ subjects:
 - kind: ServiceAccount
   name: jenkins-admin
   namespace: default
-
 ---
 
 #- now run the file in k8
