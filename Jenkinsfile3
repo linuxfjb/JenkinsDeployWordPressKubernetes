@@ -5,7 +5,7 @@ node {
     steps {
       //have to depend on the scm check out
       //git url: 'https://github.com/linuxfjb/JenkinsDeployWordPressKubernetes', branch: 'main'
-      scm checkout
+      checkout scm
     }
   }
   stage('Apply Kubernetes files') {
