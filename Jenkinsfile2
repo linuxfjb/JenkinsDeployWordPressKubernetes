@@ -4,6 +4,8 @@ pipeline {
 
   stages {
 
+    //kubernetes continuous deploy plugin to run the command on the git checkout and execute yaml files
+
     stage('Checkout Source') {
       steps {
         git url: 'https://github.com/linuxfjb/JenkinsDeployWordPressKubernetes', branch: 'main'
