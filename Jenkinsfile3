@@ -2,11 +2,8 @@ node {
   //this is kubernetes cli again
   //
   stage('Checkout Source') {
-    steps {
-      //have to depend on the scm check out
-      //git url: 'https://github.com/linuxfjb/JenkinsDeployWordPressKubernetes', branch: 'main'
-      checkout scm
-    }
+    git url: 'https://github.com/linuxfjb/JenkinsDeployWordPressKubernetes', branch: 'main'
+    //checkout scm
   }
   stage('Apply Kubernetes files') {
     withKubeConfig([credentialsId: 'user1', serverUrl: 'https://localhost:6443/']) {
