@@ -14,8 +14,10 @@ node {
                     //clusterName: 'kubernetes',
                     //namespace: 'devops-tools'
                     ]) {
+      //before and after check pods after apply command
       sh 'kubectl get pods -o wide'
       sh 'kubectl apply -f yaml/'
+      sh 'kubectl get pods -o wide'
     }
   }
 }
