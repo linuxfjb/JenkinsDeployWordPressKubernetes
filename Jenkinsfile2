@@ -4,6 +4,9 @@ pipeline {
 
   stages {
 
+    //I tried to get the kubernetes continuous deploy plugin to run the command on the git checkout but it didnt work this way.
+    //the scm method does work tho. could get this to work if ignored the git url command and specified a local path in the kubernetesDeploy command
+
     stage('Checkout Source') {
       steps {
         git url: 'https://github.com/linuxfjb/JenkinsDeployWordPressKubernetes', branch: 'main'
