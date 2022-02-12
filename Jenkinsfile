@@ -4,7 +4,7 @@ node {
     //git url: 'https://github.com/linuxfjb/JenkinsDeployWordPressKubernetes', branch: 'main'
     withKubeConfig([credentialsId: 'jenkins-kubernetes-token',
                     //caCertificate: '<ca-certificate>',
-                    serverUrl: 'http://localhost:6443',
+                    serverUrl: 'https://localhost:6443',
                     //contextName: 'kubernetes-admin@kubernetes',
                     //clusterName: 'kubernetes',
                     namespace: 'devops-tools'
